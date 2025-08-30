@@ -1,0 +1,480 @@
+PS C:\Users\Kumara>
+
+PS C:\Users\Kumara>
+PS C:\Users\Kumara> git version
+git version 2.50.1.windows.1
+PS C:\Users\Kumara> dir
+
+
+    Directory: C:\Users\Kumara
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/30/2025   2:13 PM                .android
+d-----         8/10/2025   4:28 PM                .expo
+d-----         3/16/2025   2:35 PM                .m2
+d-----         3/16/2025  10:21 PM                .nbi
+d-----         8/10/2025   2:37 PM                .vscode
+d-----          8/9/2025  12:23 PM                Cisco Packet Tracer 8.1.1
+d-r---         3/14/2025   5:13 PM                Contacts
+d-r---         3/14/2025  12:38 AM                Documents
+d-r---         3/14/2025   5:13 PM                Favorites
+d-r---         3/14/2025   5:13 PM                Links
+d-r---         3/14/2025   5:13 PM                Music
+d-r---         3/14/2025  12:22 AM                OneDrive
+d-r---         3/14/2025   5:13 PM                Pictures
+d-----         5/24/2025   4:33 PM                PixelSee
+d-r---         3/14/2025   5:13 PM                Saved Games
+d-r---         3/14/2025   5:13 PM                Searches
+d-----         8/10/2025   4:17 PM                Testapp
+d-r---         3/20/2025   7:40 PM                Videos
+-a----         8/30/2025   2:28 PM              0 .node_repl_history
+-a----         8/24/2025   3:28 PM            324 .packettracer
+
+
+PS C:\Users\Kumara> cd Testapp
+PS C:\Users\Kumara\Testapp> dir
+
+
+    Directory: C:\Users\Kumara\Testapp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/10/2025   4:28 PM                .expo
+d-----         8/10/2025   4:14 PM                assets
+d-----         8/10/2025   4:15 PM                node_modules
+-a----        10/26/1985   1:45 PM            398 .gitignore
+-a----         8/10/2025   5:00 PM            419 App.js
+-a----         8/10/2025   4:14 PM            640 app.json
+-a----        10/26/1985   1:45 PM            307 index.js
+-a----         8/10/2025   4:15 PM         308157 package-lock.json
+-a----         8/10/2025   4:14 PM            425 package.json
+
+
+PS C:\Users\Kumara\Testapp> expo start
+expo : The term 'expo' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path  
+is correct and try again.
+At line:1 char:1
++ expo start
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (expo:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Kumara\Testapp> cd..
+PS C:\Users\Kumara> expo start
+expo : The term 'expo' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path  
+is correct and try again.
+At line:1 char:1
++ expo start
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (expo:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Kumara> git log -p App.js
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Kumara> expo start
+expo : The term 'expo' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path  
+is correct and try again.
+At line:1 char:1
++ expo start
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (expo:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Kumara> Testapp
+Testapp : The term 'Testapp' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path  
+is correct and try again.
+At line:1 char:1
++ Testapp
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Testapp:String) [], CommandNotFoundException        
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Kumara> cd Testapp
+PS C:\Users\Kumara\Testapp> dir
+
+
+    Directory: C:\Users\Kumara\Testapp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/10/2025   4:28 PM                .expo
+d-----         8/10/2025   4:14 PM                assets
+d-----         8/10/2025   4:15 PM                node_modules
+-a----        10/26/1985   1:45 PM            398 .gitignore
+-a----         8/10/2025   5:00 PM            419 App.js
+-a----         8/10/2025   4:14 PM            640 app.json
+-a----        10/26/1985   1:45 PM            307 index.js
+-a----         8/10/2025   4:15 PM         308157 package-lock.json
+-a----         8/10/2025   4:14 PM            425 package.json
+
+
+PS C:\Users\Kumara\Testapp> expo start
+expo : The term 'expo' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path  
+is correct and try again.
+At line:1 char:1
++ expo start
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (expo:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Kumara\Testapp> npx expo start
+npx : File C:\Program Files\nodejs\npx.ps1 cannot be loaded because running scripts is disabled 
+on this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ npx expo start
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\Kumara\Testapp> history check 
+Get-History : Cannot bind parameter 'Id'. Cannot convert value "check" to type "System.Int64". 
+Error: "Input string was not in a correct format."
+At line:1 char:9
++ history check
++         ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-History], ParameterBindingException        
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.GetHis  
+   toryCommand
+
+PS C:\Users\Kumara\Testapp> npx create -expo-app--template Testapp22
+npx : File C:\Program Files\nodejs\npx.ps1 cannot be loaded because running scripts is disabled 
+on this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ npx create -expo-app--template Testapp22
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\Kumara\Testapp> npx create -expo-app--template blank Testapp22
+npx : File C:\Program Files\nodejs\npx.ps1 cannot be loaded because running scripts is disabled 
+on this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ npx create -expo-app--template blank Testapp22
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\Kumara\Testapp> npx create -expo-app--template blank Testapp  
+npx : File C:\Program Files\nodejs\npx.ps1 cannot be loaded because running scripts is disabled 
+on this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ npx create -expo-app--template blank Testapp
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\Kumara\Testapp> gitinit
+gitinit : The term 'gitinit' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path  
+is correct and try again.
+At line:1 char:1
++ gitinit
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (gitinit:String) [], CommandNotFoundException        
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Kumara\Testapp> git init
+Reinitialized existing Git repository in C:/Users/Kumara/Testapp/.git/
+PS C:\Users\Kumara\Testapp> 
+PS C:\Users\Kumara\Testapp>
+PS C:\Users\Kumara\Testapp> cd .git
+PS C:\Users\Kumara\Testapp\.git> dir
+
+
+    Directory: C:\Users\Kumara\Testapp\.git
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/10/2025   4:15 PM                hooks
+d-----         8/10/2025   4:15 PM                info
+d-----         8/10/2025   4:15 PM                objects
+d-----         8/10/2025   4:15 PM                refs
+-a----         8/30/2025   2:59 PM            130 config
+-a----         8/10/2025   4:15 PM             73 description
+-a----         8/10/2025   4:15 PM             23 HEAD
+-a----         8/10/2025   4:15 PM            897 index
+
+
+PS C:\Users\Kumara\Testapp\.git> git status
+fatal: this operation must be run in a work tree
+PS C:\Users\Kumara\Testapp\.git> cd..
+PS C:\Users\Kumara\Testapp> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   App.js
+        new file:   app.json
+        new file:   assets/adaptive-icon.png
+        new file:   assets/favicon.png
+        new file:   assets/icon.png
+        new file:   assets/splash-icon.png
+        new file:   index.js
+        new file:   package-lock.json
+        new file:   package.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   App.js
+
+PS C:\Users\Kumara\Testapp> npx create-expo-app--template blank Testapp2
+npx : File C:\Program Files\nodejs\npx.ps1 cannot be loaded because running scripts is disabled 
+on this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ npx create-expo-app--template blank Testapp2
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\Kumara\Testapp> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   App.js
+        new file:   app.json
+        new file:   assets/adaptive-icon.png
+        new file:   assets/favicon.png
+        new file:   assets/icon.png
+        new file:   assets/splash-icon.png
+        new file:   index.js
+        new file:   package-lock.json
+        new file:   package.json
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   App.js
+
+PS C:\Users\Kumara\Testapp> git add.\README.md
+git: 'add.\README.md' is not a git command. See 'git --help'.
+PS C:\Users\Kumara\Testapp> git add.\index.js 
+git: 'add.\index.js' is not a git command. See 'git --help'.
+PS C:\Users\Kumara\Testapp> git add.\index.js
+git: 'add.\index.js' is not a git command. See 'git --help'.
+PS C:\Users\Kumara\Testapp>
+PS C:\Users\Kumara\Testapp> npx create-expo-app --template blank TestApp
+>>
+npx : File C:\Program Files\nodejs\npx.ps1 cannot be loaded because running scripts is disabled
+on this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\Kumara\Testapp> npx create-expo-app --template blank>> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+npx : File C:\Program Files\nodejs\npx.ps1 cannot be loaded
+because running scripts is disabled on this system. For more
+information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ npx create-expo-app --template blank TestApp
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurit
+   yException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\Kumara\Testapp> cd TestApp2
+PS C:\Users\Kumara\Testapp\TestApp2> npx expo start
+Starting project at C:\Users\Kumara\Testapp\TestApp2
+Starting Metro Bundler
+The following packages should be updated for best compatibility with the installed expo version:
+  react-native@0.79.6 - expected version: 0.79.5
+Your project may not work correctly until you install the expected versions of the packages.
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▄▄▄ ▀█▀█ █ ▄▄▄▄▄ █
+█ █   █ ██▄▀ █ ▀▄██ █   █ █
+█ █▄▄▄█ ██▀▄ ▄▄██▀█ █▄▄▄█ █
+█▄▄▄▄▄▄▄█ ▀▄█ ▀ ▀ █▄▄▄▄▄▄▄█
+█▄▄▀ ▄▀▄█▀▄▀█▄██▀ █▄█▀█▀▀▄█
+█  ▄█▄█▄ █▄██▄█▄▄▀▀███▄▀▀ █
+█▀▀███▀▄▄▀  █▀█▄ █ ▄▀▀█▀ ██
+█ ▄▀▄  ▄▄█ ▄█▀▄▀▄▀█▄▀ ▄▀  █
+█▄█▄█▄█▄▄▀ █ ▄▄   ▄▄▄  ▄▀▄█
+█ ▄▄▄▄▄ ██▀ ▀▄ ▄█ █▄█ ███▄█
+█ █   █ █  ▄▄▀ ▀▄▄▄  ▄ █  █
+█ █▄▄▄█ █▀▀  ▀ ██▄▀▀▀▄█   █
+█▄▄▄▄▄▄▄█▄█▄▄▄▄█▄▄▄▄▄▄███▄█
+
+› Metro waiting on exp://172.20.10.5:8081
+› Scan the QR code above with Expo Go (Android) or the Camera app (iOS)
+
+› Using Expo Go
+› Press s │ switch to development build
+
+› Press a │ open Android
+› Press w │ open web
+
+› Press j │ open debugger
+› Press r │ reload app
+› Press m │ toggle menu
+› shift+m │ more tools
+› Press o │ open project code in your editor
+
+› Press ? │ show all commands
+
+Logs for your project will appear below. Press Ctrl+C to exit.
+› Stopped server
+PS C:\Users\Kumara\Testapp\TestApp2> cd..
+PS C:\Users\Kumara\Testapp> git commit -m "welcome"
+Author identity unknown
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Kumara@DESKTOP-QREE078.(none)')
+PS C:\Users\Kumara\Testapp> git config --global user.email "sameerachinthana790@gmail.com"
+PS C:\Users\Kumara\Testapp> git config --global user.name "sameera"
+PS C:\Users\Kumara\Testapp> git commit -m "welcome"
+[master (root-commit) 5bc217e] welcome
+ 10 files changed, 8240 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 app.json
+ create mode 100644 assets/adaptive-icon.png
+ create mode 100644 assets/favicon.png
+ create mode 100644 assets/icon.png
+ create mode 100644 assets/splash-icon.png
+ create mode 100644 index.js
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+PS C:\Users\Kumara\Testapp> git branch -M main
+PS C:\Users\Kumara\Testapp> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   App.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TestApp2/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Kumara\Testapp> git branch -M main
+PS C:\Users\Kumara\Testapp>
+PS C:\Users\Kumara\Testapp>
+PS C:\Users\Kumara\Testapp>
+PS C:\Users\Kumara\Testapp> git remote add origin https://github.com/sameerachinthana790-coder/Testapp.git
+PS C:\Users\Kumara\Testapp> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   App.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TestApp2/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Kumara\Testapp> git branch -M main
+PS C:\Users\Kumara\Testapp> git status        
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   App.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TestApp2/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Kumara\Testapp> git add README.md
+PS C:\Users\Kumara\Testapp> git commit -m "first commit"
+[main 798bff9] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+PS C:\Users\Kumara\Testapp> git branch -M main
+PS C:\Users\Kumara\Testapp> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   App.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TestApp2/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Kumara\Testapp> git add App.js
+warning: in the working copy of 'App.js', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\Kumara\Testapp> git commit -m
+error: switch `m' requires a value
+PS C:\Users\Kumara\Testapp> git commit -m "first commit"
+[main 1b72b39] first commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Kumara\Testapp> git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Kumara\Testapp> git status    
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Kumara\Testapp> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\Kumara\Testapp> git commit -m "first commit"
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\Kumara\Testapp> git branch -M main
+PS C:\Users\Kumara\Testapp> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\Kumara\Testapp> git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Kumara\Testapp> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\Kumara\Testapp> git remote add origin https://github.com/sameerachinthana790-coder/Testapp.git
+error: remote origin already exists.
+PS C:\Users\Kumara\Testapp> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (18/18), 108.73 KiB | 8.36 MiB/s, done.
+Total 18 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/sameerachinthana790-coder/Testapp.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\Kumara\Testapp>
